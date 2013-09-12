@@ -1,0 +1,139 @@
+ul {
+    list-style:square;
+    padding:0;
+    margin:0;
+    text-align:center;
+    list-style-position: inside;
+}
+body {
+    text-align:center;
+
+
+
+}
+
+h1 { 
+    font-size:30px;
+    font-family:"Arial;
+    text-align:center;
+}
+
+#ActionScript
+{
+color:red;
+}
+
+#AppleScript
+{
+color:Blue;
+}
+
+#Asp
+{
+color:Green;
+}
+
+#BASIC
+{
+color:yellow;
+}
+
+#C
+{
+color:purple;
+}
+
+#C1
+{
+color:crimson;
+}
+
+#Clojure
+{
+color:red;
+}
+
+#COBOL
+{
+color:DarkGoldenRod ;
+}
+
+#ColdFusion
+{
+color:DarkOrchid ;
+}
+
+#Erlang
+{
+color:ForestGreen ;
+}
+
+#Fortran
+{
+color:Gold ;
+}
+
+#Groovy
+{
+color:red;
+}
+
+#Haskell
+{
+color:GoldenRod ;
+}
+
+#Java
+{
+color:IndianRed  ;
+}
+
+#JavaScript
+{
+color:LawnGreen ;
+}
+
+#Lisp
+{
+color:LightSlateGray ;
+}
+
+#Perl
+{
+color:MediumBlue ;
+}
+
+#PHP
+{
+color:MidnightBlue ;
+}
+
+
+
+#Python
+{
+color:Orchid ;
+}
+
+
+
+#Ruby
+{
+color:Salmon ;
+}
+
+
+
+#Scala
+{
+color:SteelBlue ;
+}
+
+#Scheme
+{
+color:Violet ;
+}
+
+
+
+
