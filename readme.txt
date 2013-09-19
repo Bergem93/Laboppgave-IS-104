@@ -20,6 +20,19 @@ Edit1: Lagt til script som viser at siden er under konstruksjon
 
 
 
+Laboppgave 2
+
+Oppgave så langt inneholder en basis html kode, ekstren css og ekstren javascript.
+ 
+Model:
+Html står for det meste av data. Her ligger alt av lister og tekst som vises.
+
+View:
+Html, css og js samarbeider for å lage et tilfresstillende design på siden. Javascript står for det dynamiske, css for design, og html for innhold.
+
+Controller:
+Javascript sørger for at valgene man gjør resulterer i en handling eller noe som skjer. 
+
 
 
 0)
