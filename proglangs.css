@@ -1,12 +1,47 @@
-ul {
-    list-style:square;
-    padding:0;
-    margin:0;
-    text-align:center;
-    list-style-position: inside;
-}
-body {
-    text-align:center;
+﻿body {
+  Text-align: center; /* Sentrerer teksten i body */
+  padding-left: ;  
+  font-family: Georgia, "Times New Roman", /* Valg av font */
+        Times, serif;
+  color: #4212AF; /* Fargen på body tekst */
+  background-color: #FFFE73 /* Fargen på bakgrunden */
+  
+  }
+ul.navbar { /* Definerer navigasjons baren */
+  list-style-type: none; /* Ingen listemarkeringer (f. eks cirlce, square etc */
+  padding: 0;
+  margin: 0;
+  position: absolute; /* Posisjonen er absolutt, den flytter seg ikke. */
+  top: 2em; /* Posisjon */
+  left: 1em; /* Posisjon */
+  width: 9em } /* Posisjon */
+h1 {
+  font-family: Helvetica, Geneva, Arial,
+        SunSans-Regular, sans-serif } /* Font for h1 */
+ul.navbar li { /* Definerer liste i navigasjonsbaren */
+  background: #FFFD00; /* Fargen på bakgrunden i navigasjonsbaren */
+  margin: 0.5em 0; /* Posisjonen til navbaren */
+  padding: 0.3em; /* Posisjonen til navbaren */
+  border-right: 1em solid blue} /* Fargen på høyre kant til navigasjonsbaren */
+ul.navbar a { /* Definerer navbar a */
+  text-decoration: none }
+a:link { /* definerer linkene i navbaren */
+  color: 260672 } /* Fargen i navbaren */
+a:visited { /* Definerer linker du har besøkt */
+  color: 7247D7 } /* Fargen til linker du har besøkt*/
+address { /* Definerer "linja */
+  margin-top: 1em; /* posisjon til linja */
+  padding-top: 1em; /* posisjon til linja */
+  border-top: thin dotted } /* Hvordan linja ser ut */
+  
+  ul { /* Lista med programmeringsspråk */
+    list-style:square; /* Type */
+    padding:0; /* Posisjon */
+    margin:0; /*Posisjon */
+    text-align:center; /* Sentrer lista */
+    list-style-position: inside; /* Flytter markeringene inntil teksten i lista */
+
+   
 
 
 
