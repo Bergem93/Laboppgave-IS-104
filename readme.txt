@@ -1,3 +1,27 @@
+Proglangs.html 
+
+Inneholder basis html kode for en side som viser en liste med programmeringsspråk. Den inneholder også en referanse til proglangs.css og proglangs.js
+Edit1: Lagt til en menybar.
+
+
+
+Proglangs.css
+
+Inneholder ekstern css fil til proglangs.html
+Edit1: Lagt til design og fargevalg.
+
+
+Proglangs.js
+
+Inneholder et enkelt javascript som poster hva du velger i menyen.
+Edit1: Lagt til script som viser at siden er under konstruksjon
+
+
+
+
+
+
+
 0)
 Validere om et skjema er riktig utfylt før det sendes til brukeren.
 - Navigere i historikken, for eksempel gå tilbake tilforrige side som brukeren var på, ved å
