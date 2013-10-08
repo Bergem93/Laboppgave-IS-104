@@ -1,72 +1,37 @@
-Proglangs.html 
-
-Inneholder basis html kode for en side som viser en liste med programmeringsspråk. Den inneholder også en referanse til proglangs.css og proglangs.js
-Edit1: Lagt til en menybar.
-
-
-
-Proglangs.css
-
-Inneholder ekstern css fil til proglangs.html
-Edit1: Lagt til design og fargevalg.
-
-
-Proglangs.js
-
-Inneholder et enkelt javascript som poster hva du velger i menyen.
-Edit1: Lagt til script som viser at siden er under konstruksjon
-
-
-
-
-
-Laboppgave 2
-
-Oppgave så langt inneholder en basis html kode, ekstren css og ekstren javascript.
- 
-Model:
-Html står for det meste av data. Her ligger alt av lister og tekst som vises.
-
-View:
-Html, css og js samarbeider for å lage et tilfresstillende design på siden. Javascript står for det dynamiske, css for design, og html for innhold.
-
-Controller:
-Javascript sørger for at valgene man gjør resulterer i en handling eller noe som skjer. 
-
-
-
-0)
-Validere om et skjema er riktig utfylt før det sendes til brukeren.
-- Navigere i historikken, for eksempel gå tilbake tilforrige side som brukeren var på, ved å
-  trykke på en knapp eller en lenke.
-- Finne ut mer informasjon om hvilken nettleser brukeren har.
-- Vise og skjule informasjon, noe som muliggjørfor eksempel å lage menyersom
-  åpner/lukkerseg.
-- Utføre beregninger på klientsiden, uten at tjeneren må belastes(små kalkulatorer).
-- Lage mer brukervennlige websider, med for eksempel klikk-og-dra-løsninger og andre
-  gui-elementersom er kjentfra vanlige applikasjoner.
-- Som bruker benytte et webbasertskrive/regnearkprogram, for eksempel med ”Google
-  Docs & Spreadsheets”
+0) 
+Ved å bruke et eksisterende javascript bibliotek som jquery er det nesten 100% sikkert at koden din fungerer på de mest populære
+nettleserene som er i bruk. Hvis du derimot skriver rå javascript kode kan du risikere at koden din ikke fungerer i den nettleseren 
+du eller andre som skal bruke koden din benytter. Det er også ofte enklere å mer oversiktlig å kode i eksisterende biblioteker da 
+de er mer gjennomført med tanke på syntaxer og formulering.
 
 1)
-CSS ID bruker du for enkeltelementer, mens class elementer bruker du når du skal samle flere i en og samme klasse.
+HTML/CSS er langt bedre å lettere å bruke når det kommer til rendring av tekst. Her er HTML veldig oversiktlig med tags for ulike deler av
+teksten, slik som h1, b, p, div osv, mens canvas er mer tungvint å bruke(filltext()) Det er også langt flere muligheter til å style teksten
+i HTML/CSS enn canvas. 
+
+Gjennom å merke inn input med f.eks "date" kan andre enheter enkelt kjenne igjen at her skal det skrives en dato, og henter frem tastatur for
+dato. Dette er ikke mulig i canvas.
+
+I HTML kan søkemotorer enkelt finne all informasjon som ligger på siden din, mens det er stikk motsatt i canvas. Der vil all informasjon ble
+liggende som en "svart boks" med tekst, og søkemotoren vil ikke kunne hente informasjon fra den. Det samme gjelder "tekst til lyd" programmer, 
+som kan lese html tags og lese opp teksten, mens canvas ikke gir deg den muligheten.
+
+
+Canvas:
+Når noder legges til, fjernes eller oppdateres i HTML applikasjoner, tvinger dette ofte nettleseren til å oppdatere hele siden istedet for det aktuelle området,
+noe som kan være en svært tidkrevende prosess; å gjøre disse oppdateringene flere ganger per sekund, noe som kan være nødvendig i et realtime program, 
+kan følgende bremse ned ytelsen til en applikasjon betraktelig.
+
+Canvas er ikke skrevet på en så streng og hierarkisk form som HTML og vil derfor alltid utføre oppgavene raskere.
+Når hastighet og ytelse er av den største betydning, er derfor canvas å foretrekke foran HTML.
 
 
 2)
-Brukbarheten i deloppgave 1 er mye bedre kontra den i deloppgave 0.
-Dette fordi man kan ha en mye større liste på mye mindre plass.
-Derrav sparer man brukeren for å måtte skrolle nedover en uendelig liste,
-noe som ville gjort siden meget lang.
+ved hjelp av canvas og html 5 kan man manipulere bildet grafisk. canvas er en god grafisk 
+presentasjonsmåte på bilder som må oppdateres raskt, dette kan være for eksempel være spill. 
+ man kan også manipulere bildet slik at man får 3d effekt gjennom canvas i html 5.
 
-3)
-De bruker <ul>, <li> og tables. Ved og kategorisere de forskjellige språkene etter forbokstav.
-Da kan brukeren selv velge en bokstav som da inneholder en link til forbokstaven du er ute etter.
 
-4)
-Div er et generelt objekt/tag du kan putte så si hva som helst inni. 
-Span derimot er kun en liten seksjon av en tekstlinje.
 
-5)
-Ved å ikke legge inn et "Selected" option øverst, vil det første alternativet automatisk velges.
-For at javascriptet skal kjøres, må man først velge et annet alternavtiv før det første vil virke.
-Man kan ikke velge det dirkete og få et utskrevet resultat.
+
+x) Simon Berg, 5 timer.
