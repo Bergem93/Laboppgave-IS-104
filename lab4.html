@@ -1,0 +1,140 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml" xml :lang="en">
+<head>
+	<title>LAB4 alfabetisk liste</title>
+	<script src="js/jquery-1.8.1.js"></script>
+	<script src="jquery-scroll.js"></script> 
+	<link rel="stylesheet" type="text/css" href="lab4.css">
+	
+	<script>
+	$(function() {
+		
+		$( ".firstUL li" ).each(function() {
+			$( this ).click(function() {
+				$( ".firstUL li" ).removeClass( "selected" );
+				$( this ).addClass( "selected" );
+				elementClick = $( this ).attr( "id" );
+				
+				
+				$( ".content-container" ).scrollTo($( "#content-for-"+elementClick ), 800);
+				
+				$( ".content-container div" ).css( {'background-color' : '#ffffff'} );
+                $( ".content-container #content-for-"+elementClick ).css( {'background-color' : '#d2e2fc'} );
+				
+		
+		});
+	});		
+		
+	
+	//når tilbake til toppen' blir klikket på må A markeres og innholde må rulles til toppen
+	$( '.tilbake' ).click(function() { 
+		$( ".firstUL li" ).each(function() { 
+			$( ".firstUL li" ).removeClass( "selected" ); //remove classname "selected" 
+			}); 
+			//legg til klassen selected til første bokstav i alfabetet 
+			$( "#a" ).addClass( "selected" ); 
+			//rulle til et element, "A" i dette tilfelle 
+			$( ".content-container" ).scrollTo($( "#content-for-a" ), 800);
+			
+			
+			$( ".content-container div" ).css( {'background-color' : '#ffffff'} );
+			$( ".content-container #content-for-a" ).css( {'background-color' : '#d2e2fc'} );
+			
+			
+});
+	});
+	</script>
+	
+<body>
+
+<div id="body-container">
+
+		<div class="glossary-container">
+			<ul class="firstUL">
+				<li id="a" class="selected">A</li>
+				<li id="b">B</li>
+				<li id="c">C</li>
+				<li id="d">D</li>
+				<li id="e">E</li>
+				<li id="f">F</li>
+			</ul>
+		</div>
+		
+		<div class="content-container">
+			<div id="content-for-a" style="background-color:#d2e2fc">
+			
+				<dl>
+					<dt>ActionScript</dt>
+						<dd>ActionScript er et programmeringsspråk basert på ECMAScript som blir brukt primært til utvikling av nettsider og programvare for Adobe Flash Player-plattformen, men også i noen databaseapplikasjoner og grunnleggende robotikk. </dd>
+						
+					<dt>AppleScript</dt>
+						<dd>AppleScript er et skriptspråk av Apple som brukes i Mac OS og Mac OS X.</dd>
+					
+					<dt>Asp</dt>
+						<dd>ASP.NET er et webapplikasjons-rammeverk utviklet og markedsført av Microsoft.</dd>
+				</dl>
+				<p class="tilbake">Tilbake til toppen</p>
+			</div>
+			
+			<div id="content-for-b">
+				<dl>
+					<dt>BASIC</dt>
+						<dd>BASIC er et programmeringsspråk som ble utviklet i USA i 1963, av John George Kemeny og Thomas Eugene Kurtz på Dartmouth College, med det mål for øye å gjøre programmering enklere. BASIC er et relativt lettfattelig programmeringsspråk og benytter seg av bestemte engelske ord i sine kommandoer. </dd>
+				</dl>
+				<p class="tilbake">Tilbake til toppen</p>
+			</div>
+			
+			<div id="content-for-c">
+				<dl>
+					<dt>C</dt>
+						<dd>C er et høynivå programmeringsspråk. Med dette språket er det mulig å uttrykke seg svært maskinnært til høynivåspråk å være. </dd>
+						
+					<dt>C++<dt>
+						<dd>C++ er et populært høynivå programmeringsspråk som er en utvidelse av språket C. C++ ble opprinnelig kalt «C with Classes» og ble utviklet og implementert av dansken Bjarne Stroustrup omkring 1983–85, som da jobbet for AT&T Bell Labs.</dd>
+						
+					<dt>Clojure</dt>
+						<dd>Clojure er en dynamisk typet, funksjonell, Lisp dialekt, som i tillegg har veldig god integrasjon med Java. Clojure er i seg selv et veldig enkelt språk, med lite syntaks, men veldig mye kraft.</dd>
+						
+					<dt>COBOL</dt>
+						<dd>COBOL (COmmon Business Oriented Language) er et programmeringsspråk som har vært i utstrakt bruk for koding av økonomiske og administrative transaksjonssystemer.</dd>
+						
+					<dt>ColdFusion</dt>
+						<dd>ColdFusion er en kommersiell rask programutvikling plattform som kan komme veldig nyttig for mange mennesker som dukker opp i web-design bransjen, web-design fagfolk.</dd>
+						
+				</dl>
+				<p class="tilbake">Tilbake til toppen</p>
+			</div>
+			
+			<div id="content-for-d">
+				<dl>
+					<dt>D finnes ingen</dt>
+						<dd>D finnes ingen programmeringsspråk på D (pun intended)</dd>
+					
+	
+				</dl>
+			</div>	
+
+			<div id="content-for-e">
+				<dl>
+					<dt>Erlang</dt>
+						<dd>Erlang er et funksjonelt programmeringsspråk designet med hensyn på parallellprogrammering.</dd>
+						
+				</dl>
+				<p class="tilbake">Tilbake til toppen</p>
+			</div>
+		
+			<div id="content-for-f">
+				<dl>
+					<dt>Fortran</dt>
+						<dd>Fortran, tidligere kalt FORTRAN (FORmula TRANslation), blir ofte ansett som det første programmeringsspråket, siden det i prinsippet (og senere også i praksis) var portabelt. Fortran var uavhengig av datamaskinens maskinspråk, og kunne benyttes av ulike datamaskinarkitekturer.</dd>
+				</dl>
+				<p class="tilbake">Tilbake til toppen</p>
+			</div>
+		</div>
+</div>	
+
+<address id="address">Laget 22.10.13<br>
+av Håkon Bergem</address>
+
+</body>
+</html>
+
